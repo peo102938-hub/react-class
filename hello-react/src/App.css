@@ -1,0 +1,169 @@
+/* 페이지 배경 설정 */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e0f2fe, #f3e8ff 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 20px;
+}
+
+/* 중앙 프로필 카드 */
+.profile-card {
+  position: relative;
+  width: 320px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px 24px;
+  box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.05),
+              0 8px 16px -6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* 상태 뱃지 */
+.status {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background-color: #dcfce7;
+  color: #166534;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+/* 프로필 아바타 */
+.avatar-img {
+  width: 72px;
+  height: 72px;
+  background-color: #1e3a8a;
+  color: #38bdf8;
+  font-size: 26px;
+  font-weight: 700;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  box-shadow: 0 10px 15px -3px rgba(38, 58, 138, 0.3);
+}
+
+/* 소제목 */
+.eyebrow {
+  color: #6366f1;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 6px 0 6px;
+}
+
+/* 이름 */
+h1 {
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* 학과 정보 */
+.department {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+/* 구분선 */
+.divider {
+  width: 36px;
+  height: 3px;
+  background-color: #3b82f6;
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+/* 목표 설명 */
+.goal {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 16px 0;
+  word-break: keep-all;
+}
+
+/* 기술 스택 목록 */
+.tags {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+/* 개별 스택 태그 */
+.tags span {
+  background-color: #f1f5f9;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 14px;
+}
+
+/* 하단 버튼 */
+button {
+  width: 100%;
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 0;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1e293b;
+}
+
+.avatar-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin: 0 auto 16px auto;
+  display: block;
+  box-shadow: 0 10px 15px - 3px rgba(0, 0, 0, 0.15);
+}
+
+.student-id {
+  margin: 4px, 0;
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+
+}
+
+.qr-area {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f8fafc;
+  border: #e2e8fe;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+
+}
+
+.qr-area p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: #334155;
+}
