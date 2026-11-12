@@ -1,0 +1,151 @@
+/* 전체 화면 전체 높이 */
+.page {
+  min-height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* 라이트 모드 theme 값이 light일 때 적용. */
+.page.light {
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+/* 다크 모드 theme 값이 dark일 때 적용됩니다. */
+.page.dark {
+  background: #0f172a;
+  color: white;
+}
+
+/* Header 영역 제목과 다크모드 버튼을 좌우로 배치합니다. */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+/* Header의 제목 */
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Header의 버튼 */
+.header button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+/* 마우스를 버튼 위에 올렸을 때 */
+.header button:hover {
+  background: #1d4ed8;
+}
+
+/* 검색 입력창과 결과를 표시하는 영역 */
+.search-box {
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+}
+
+/* 학생 이름 검색 글자 */
+.search-box label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* 검색창과 초기화 버튼을 한 줄에 배치합니다. */
+.search-row {
+  display: flex;
+  gap: 10px;
+}
+
+/* 검색 입력창 */
+.search-row input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* 검색 초기화 버튼 */
+.search-row button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #475569;
+  color: white;
+  cursor: pointer;
+}
+
+/* 마우스를 버튼 위에 올렸을 때 */
+.search-row button:hover {
+  background: #334155;
+}
+
+/* 검색 결과 글자 */
+.search-result {
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+/* 학생 목록 영역 StudentList.jsx에서 사용하는 영역 */
+.student-list {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* 학생 한 명의 정보를 표시하는 카드 */
+.student-card {
+  padding: 20px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  background: white;
+  color: #0f172a;
+}
+
+/* 학생 이름 */
+.student-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* 학생 학과와 점수 */
+.student-card p {
+  margin: 6px 0;
+}
+
+/* dark 클래스 안에 있는 student-card의 색상을 변경합니다. */
+.dark .student-card {
+  background: #1e293b;
+  color: white;
+  border-color: #475569;
+}
+
+/* 다크모드 검색 영역 */
+.dark .search-box {
+  border-color: #475569;
+}
+
+/* 다크모드 Header 아래 선 */
+.dark .header {
+  border-bottom-color: #475569;
+}
